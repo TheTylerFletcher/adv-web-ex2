@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,800;1,400;1,600;1,700&display=swap');
 /* CSS Document */
 * {
 	box-sizing: border-box;
@@ -8,22 +9,25 @@
 
 body {
 	background: white;
-    font: 16px/22px helvetica, arial, san-serif;
+    font: 24px/40px times, arial, san-serif;
 }
 
 .container {
-    width: 85%;
-    max-width: 1200px;
+    width: 90%;
     margin: 0 auto;
 }
 .flex {
     display: flex;
-    justify-content: space-between;
 }
-
+.center {
+    text-align: center;
+}
 /*size styles*/
 .qtr {
     width: 25%;
+}
+.three {
+    width: 33%;
 }
 .half {
     width: 50%;
@@ -31,36 +35,145 @@ body {
 .third {
     width: 75%;
 }
-.center {
-    text-align: center;
-}
 /*header styles*/
 header {
-    background: #EEE2DF;
+    background: url("../mobile-assets/head.jpg") no-repeat;
+    background-size: cover;
 }
-/*nav styles*/
-nav ul {
-    list-style: none;
+.mobile img {
+    margin-top: 10.87rem;
+    margin-bottom: 13rem;
 }
-nav a {
-    color: black;
+
+/*shareholders*/
+.shareholder {
+    background: url("../mobile-assets/bgAbout.jpg") no-repeat;
+    background-size: cover;
+    height: 34.18rem;
+    padding-top: 78px;
+}
+.blkBack {
+    padding-top: 35px;
+    color: #feffff;
+    background: rgba(0,0,0,.7);
+    width: 484px;
+    height: 358px;
+    text-align: center;
+}
+.blkBack span {
+    color: #0070bb;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+}
+.blkBack h1 {
+    margin-bottom: 39px;
+}
+.blkBack h2 {
+    margin-bottom: 29px;
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+}
+.blkBack a {
+    color: white;
     text-decoration: none;
-    font-weight: bold;
+    border: 1px white solid;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    padding: 25px 50px;
+    text-transform: capitalize;
 }
-/*nav styles end*/
-/*head styles end*/
-/*footer styles start*/
+/*what we do*/
+.whatwedo {
+    margin-bottom: 2.75rem
+}
+.whatwedo h1 {
+    margin-top: 3.87rem;
+    margin-bottom: 3.75rem;
+    color: #0070bb;
+    text-align: center;
+}
+.whatwedo img {
+    width: 100%;
+}
+.whatwedo p {
+    font: 1.5rem/1.62rem 'open sans';
+    font-weight: 400;
+}
+.whatwedo span {
+    color: #0070bb;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+/*client section*/
+.client {
+    background: url("../mobile-assets/clint.jpg") no-repeat;
+    background-size: cover;
+    padding-top: 6.24rem;
+    padding-bottom: 5.56rem;
+}
+.client .blkBack {
+    height: 350px;
+    padding-top: 4.25 rem;
+}
+.client .blkBack h1 {
+    margin-bottom: 4.61rem;
+}
+.menu {
+    text-align: center;
+    align-content: center;
+}
+.menu h1 {
+    text-align: left;
+    color: #0070bb;
+    margin-top: 3.12rem;
+    margin-bottom: 2.12rem;
+}
+.menu a {
+    color: #0070bb;
+    text-decoration: none;
+    font-family: 'open sans';
+    font-weight: 700;    
+}
+.menu .active {
+    background-color: #0070bb;
+}
+.menu .active a {
+    color: white;
+    height: 5.06rem;
+}
+.border {
+    border: 2px solid #0070bb;
+    padding-top: 2.18rem;
+    padding-bottom: 1.68rem;
+}
+/*logos*/
+.logos {
+    background: #e8f2f8;
+    padding: 3.56rem 0;
+}
+.logos img {
+    width: 100%;
+    margin-left: 2.56rem;
+    margin-right: 2.56rem;
+}
+#toplogo {
+    margin-bottom: 4.68rem;
+}
+/*footer*/
 footer {
-    background: #eee2df;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    height: 15.12rem;
 }
-footer ul {
-    list-style: none;
-}
-footer li {
-    padding-bottom: 5px;
+footer p {
+    margin-top: 2.31rem;
+    margin-bottom: 2.18rem;
 }
 footer a {
-    color: black;
+    color: #0070bb;
     text-decoration: none;
+    border: 2px solid #0070bb;
+    padding: 1rem 1.18rem .75rem 1rem;
+    margin-bottom: 4.81rem;
 }
-/*footer styles ends*/
