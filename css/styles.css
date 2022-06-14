@@ -19,6 +19,15 @@ body {
 .flex {
     display: flex;
 }
+.justify-content {
+    justify-content: center;
+}
+.alignright {
+    justify-content: flex-end;
+}
+.bottom {
+    align-items: flex-end;
+}
 .center {
     text-align: center;
 }
@@ -40,11 +49,14 @@ header {
     background: url("../mobile-assets/head.jpg") no-repeat;
     background-size: cover;
 }
-.mobile img {
+header img {
     margin-top: 10.87rem;
     margin-bottom: 13rem;
 }
-
+.strip {
+    background: black;
+    color: white;
+}
 /*shareholders*/
 .shareholder {
     background: url("../mobile-assets/bgAbout.jpg") no-repeat;
@@ -176,4 +188,50 @@ footer a {
     border: 2px solid #0070bb;
     padding: 1rem 1.18rem .75rem 1rem;
     margin-bottom: 4.81rem;
+}
+.tablet, .web {
+    display: none;
+}
+/*media queries*/
+@media screen and (min-width: 900px){
+    .mobile, .tablet {
+        display: none;
+    }
+    .web {
+        display: block;
+    }
+    .container {
+        width: 82%;
+    }
+    header {
+        background: url("../desktop-assets/bgHome.jpg") no-repeat;
+        background-size: cover; 
+    }
+    header p {
+        font-family: 'open sans';
+        font-size: 16px;
+    }
+     nav {
+        margin-top: 1rem;
+        text-transform: uppercase;
+    }
+    nav ul {
+        list-style: none;
+    }
+    nav li {
+        padding-right: 2rem;
+    }
+    nav li:nth-last-child(1) {
+        padding-right: 0;
+    }
+    nav a {
+        text-decoration: none;
+        font-size: 16px;
+        font-family: 'open sans';
+    }
+    .shareholder {
+        background: url("../desktop-assets/bgAbout.jpg") no-repeat;
+        background-size: cover;
+    }
+   
 }
