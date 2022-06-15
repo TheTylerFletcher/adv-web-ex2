@@ -22,6 +22,9 @@ body {
 .justify-content {
     justify-content: center;
 }
+.space-between {
+    justify-content: space-between;
+}
 .alignright {
     justify-content: flex-end;
 }
@@ -94,7 +97,7 @@ header img {
 .blkBack a {
     color: white;
     text-decoration: none;
-    border: 1px white solid;
+    border: 2px white solid;
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     padding: 25px 50px;
@@ -267,5 +270,52 @@ footer a {
     }
     .whatwedo p {
         font-size: 16px;
+    }
+    .client {
+        background: url("../desktop-assets/clientweb.jpg") no-repeat;
+        background-size: cover;
+    }
+    .client .blkBack {
+        width: 30rem;
+    }
+    .menu {
+        padding-bottom: 1.37rem;
+    }
+    .menu .border {
+        padding: .68rem 0;
+        margin-right: 1.25rem;
+        width: 33%;
+    }
+    .menu .border:nth-last-child(1) {
+        margin-right: 0;
+    }
+    .logos {
+        padding: 0;
+    }
+    .logos img {
+        width: 25%;
+        margin: 0;
+        padding: 0;
+    }
+    .contact {
+        padding-top: 3rem;
+        padding-bottom: 8rem;
+    }
+    .contact a{
+        margin-left: 2rem;
+        text-decoration: none;
+        color: #0070bb;
+        text-transform: uppercase;
+        font-family: 'open sans';
+        border: 2px solid #0070bb;
+        padding: 1rem 1.25rem .75rem 1rem;
+    }
+    footer {
+        display: flex;
+    }
+    footer a {
+        margin: 0;
+        padding: 0;
+        border: 2px solid;
     }
 }
